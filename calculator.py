@@ -37,6 +37,8 @@ def main():
             print("Результат:", multiply(num1, num2))
         elif choice == '4':
             print("Результат:", divide(num1, num2))
+        else:
+            print("Неправильный ввод")
         
 
 if __name__ == "__main__":
