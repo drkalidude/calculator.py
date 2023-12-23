@@ -1,7 +1,9 @@
 import math
 
+# Функция для решения квадратных уравнений
 def solve_quadratic(a, b, c):
-    d = b**2 - 4*a*c
+    d = b**2 - 4*a*c  # Вычисление дискриминанта
+    # Проверка условий для дискриминанта
     if d > 0:
         root1 = (-b + math.sqrt(d)) / (2*a)
         root2 = (-b - math.sqrt(d)) / (2*a)
@@ -11,14 +13,17 @@ def solve_quadratic(a, b, c):
         return root,
     else:
         return "Уравнение не имеет вещественных корней"
-    
+
+# Возведение числа x в степень n
 def power(x, n):
     return x ** n
 
+# Вычисление логарифма числа x по основанию base
 def log(x, base):
     return math.log(x, base)
 
-def add(x,y):
+# Операции основной арифметики
+def add(x, y):
     return x + y
 
 def subtract(x, y):
@@ -28,10 +33,12 @@ def multiply(x, y):
     return x * y
 
 def divide(x, y):
+    # Проверка на деление на ноль
     if y == 0:
         return "Ошибка: Деление на ноль"
     return x / y
 
+# Тригонометрические функции
 def sin(x):
     return math.sin(math.radians(x))
 
@@ -41,6 +48,7 @@ def cos(x):
 def tan(x):
     return math.tan(math.radians(x))
 
+# Обратные тригонометрические функции
 def arcsin(x):
     return math.degrees(math.asin(x))
 
@@ -56,6 +64,7 @@ def main():
     num2 = float(input("Введите второе число: "))
 
     while True:
+        # Вывод меню действий
         print("Выберите действие: ")
         print("1. Сложение")
         print("2. Вычитание")
@@ -73,11 +82,15 @@ def main():
         print("14. Арктангенс")
         print("0. Выйти")
 
+        # ... описание меню ...
         choice = input("Введите номер операции: ")
 
         if choice == '0':
             break
 
+        # Обработка выбора пользователя
+        # ... логика обработки ...
+        
         if choice == '1':
             print("Результат:", add(num1, num2))
         elif choice == '2':
