@@ -32,6 +32,25 @@ def divide(x, y):
         return "Ошибка: Деление на ноль"
     return x / y
 
+def sin(x):
+    return math.sin(math.radians(x))
+
+def cos(x):
+    return math.cos(math.radians(x))
+
+def tan(x):
+    return math.tan(math.radians(x))
+
+def arcsin(x):
+    return math.degrees(math.asin(x))
+
+def arccos(x):
+    return math.degrees(math.acos(x))
+
+def arctan(x):
+    return math.degrees(math.atan(x))
+
+
 def main():
     num1 = float(input("Введите первое число: "))
     num2 = float(input("Введите второе число: "))
