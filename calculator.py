@@ -65,6 +65,12 @@ def main():
         print("6. Решение квадратного уравнения")
         print("7. Возведение в степень")
         print("8. Логарифм")
+        print("9. Синус")
+        print("10. Косинус")
+        print("11. Тангенс")
+        print("12. Арксинус")
+        print("13. Арккосинус")
+        print("14. Арктангенс")
         print("0. Выйти")
 
         choice = input("Введите номер операции: ")
@@ -96,6 +102,35 @@ def main():
             number = float(input("Введите число для логарифмирования: "))
             base = float(input("Введите основание логарифма: "))
             print("Результат:", log(number, base))
+        elif choice == '8':
+            number = float(input("Введите число для логарифмирования: "))
+            base = float(input("Введите основание логарифма: "))
+            print("Результат:", log(number, base))
+
+        elif choice == '9':
+            angle = float(input("Введите угол в градусах для синуса: "))
+            print("Результат:", sin(angle))
+
+        elif choice == '10':
+            angle = float(input("Введите угол в градусах для косинуса: "))
+            print("Результат:", cos(angle))
+
+        elif choice == '11':
+            angle = float(input("Введите угол в градусах для тангенса: "))
+            print("Результат:", tan(angle))
+
+        elif choice == '12':
+            value = float(input("Введите значение для арксинуса (от -1 до 1): "))
+            print("Результат:", arcsin(value))
+
+        elif choice == '13':
+            value = float(input("Введите значение для арккосинуса (от -1 до 1): "))
+            print("Результат:", arccos(value))
+
+        elif choice == '14':
+            value = float(input("Введите значение для арктангенса: "))
+            print("Результат:", arctan(value))
+
         else:
             print("Неправильный ввод")
         
