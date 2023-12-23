@@ -13,6 +13,9 @@ def divide(x, y):
     return x / y
 
 def main():
+    num1 = float(input("Введите первое число: "))
+    num2 = float(input("Введите второе число: "))
+
     while True:
         print("Выберите действие: ")
         print("1. Сложение")
@@ -22,9 +25,6 @@ def main():
         print("5. Выйти")
 
         choice = input("Введите номер операции: ")
-
-        num1 = float(input("Введите первое число: "))
-        num2 = float(input("Введите второе число: "))
 
         if choice == '5':
             break
