@@ -22,11 +22,12 @@ def main():
         print("2. Вычитание")
         print("3. Умножение")
         print("4. Деление")
-        print("5. Выйти")
+        print("5. Обновление чисел")
+        print("0. Выйти")
 
         choice = input("Введите номер операции: ")
 
-        if choice == '5':
+        if choice == '0':
             break
 
         if choice == '1':
@@ -37,6 +38,9 @@ def main():
             print("Результат:", multiply(num1, num2))
         elif choice == '4':
             print("Результат:", divide(num1, num2))
+        elif choice == '5':
+            num1 = float(input("Введите первое число: "))
+            num2 = float(input("Введите второе число: "))
         else:
             print("Неправильный ввод")
         
