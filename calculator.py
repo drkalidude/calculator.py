@@ -1,6 +1,9 @@
 def add(x,y):
     return x + y
 
+def subtract(x, y):
+    return x - y
+
 def main():
     while True:
         print("Выберите действие: ")
