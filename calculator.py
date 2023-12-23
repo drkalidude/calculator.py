@@ -18,11 +18,15 @@ def main():
         num1 = float(input("Введите первое число: "))
         num2 = float(input("Введите второе число: "))
 
-        if choice == '1':
-            print("Результат:", add(num1, num2))
-
         if choice == '5':
             break
+
+        if choice == '1':
+            print("Результат:", add(num1, num2))
+        elif choice == '2':
+            print("Результат:", subtract(num1, num2))
+
+        
 
 if __name__ == "__main__":
     main()
