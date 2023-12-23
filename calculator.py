@@ -28,7 +28,8 @@ def main():
             print("Результат:", add(num1, num2))
         elif choice == '2':
             print("Результат:", subtract(num1, num2))
-
+        elif choice == '3':
+            print("Результат:", multiply(num1, num2))
         
 
 if __name__ == "__main__":
