@@ -44,6 +44,8 @@ def main():
         print("4. Деление")
         print("5. Обновление чисел")
         print("6. Решение квадратного уравнения")
+        print("7. Возведение в степень")
+        print("8. Логарифм")
         print("0. Выйти")
 
         choice = input("Введите номер операции: ")
@@ -67,6 +69,14 @@ def main():
             b = float(input("Введите коэффициент b: "))
             c = float(input("Введите коэффициент c: "))
             print("Результат:", solve_quadratic(a, b, c))
+        elif choice == '7':
+            base = float(input("Введите основание (число, которое будет возведено в степень): "))
+            exponent = float(input("Введите показатель степени: "))
+            print("Результат:", power(base, exponent))
+        elif choice == '8':
+            number = float(input("Введите число для логарифмирования: "))
+            base = float(input("Введите основание логарифма: "))
+            print("Результат:", log(number, base))
         else:
             print("Неправильный ввод")
         
